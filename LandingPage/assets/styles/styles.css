@@ -1,0 +1,343 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Metropolis;
+    border: none;
+    text-decoration: none;
+}
+
+a {
+    color: unset;
+}
+
+*:focus {
+    outline: none;
+    border: none;
+}
+
+header {
+    background-image: url('../images/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+header div.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    margin: 0px auto;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+header img.logo {
+    width: 300px;
+}
+
+header div.search-box {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.search-box div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0px 5px;
+}
+
+div.search-box i {
+    margin: 10px;
+}
+
+div.search-box div.seperator {
+    height: 50%;
+    width: 2px;
+    background-color: #8282829b;
+}
+
+header div.search-box div.select i {
+    color: #F57082;
+}
+
+header div.search-box div.input i {
+    color: #828282b7;
+}
+
+header div.search-box div.input {
+    flex-grow: 80;
+}
+
+header div.search-box div.input input {
+    align-self: center;
+    font-size: 1rem;
+    width: 100%;
+}
+
+header div.search-box div.select select {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #757575;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+nav .nav-item {
+    color: #fff;
+    margin: 0px 10px;
+}
+
+nav div.nav-item.app {
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+nav div.nav-item {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+nav div.container {
+    display: flex;
+}
+
+
+/* nearby locations section */
+
+section.nearby {
+    min-height: 40vh;
+}
+
+section.nearby div.container {
+    padding: 40px 0px;
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+section.nearby div.container h3 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: #363636
+}
+
+section.nearby div.box {
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 5%;
+}
+
+section.app {
+    min-height: 300px;
+    background-color: #FEFBF6;
+}
+
+section.app div.container {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.app div.container img {
+    max-width: 300px;
+    display: block;
+}
+
+section.app div.container img {
+    max-width: 300px;
+}
+
+section.app div.container div.form {
+    max-width: 485px;
+}
+
+section.app div.container div.form h1 {
+    font-size: 3rem;
+}
+
+section.app div.container div.form small {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #393737;
+    margin: 20px 0px;
+}
+
+
+/* Custom radio button */
+
+div.radio {
+    display: flex;
+}
+
+div.radio div:last-child {
+    margin: 0px 20px 20px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ED5A6B;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #ED5A6B;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* ------------ */
+
+[type="radio"]:checked button {
+    background-color: red !important;
+}
+
+section.app div.input {
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    height: 50px;
+}
+
+section.app div.input input {
+    flex-grow: 70;
+    background-color: #fff;
+    border: 1px solid #CFCFCF;
+    border-radius: 5px;
+    margin: 0px 10px 0px 0px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+section.app div.input input::placeholder {
+    padding-left: 10px;
+}
+
+section.app div.input button {
+    background-color: #ED5A6B;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+section.app div.download {
+    margin: 20px 0px;
+    font-weight: 100;
+    color: grey;
+}
+
+section.app div.download div.content img {
+    max-width: 150px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+section.options {
+    min-height: 60vh;
+}
+
+section.options div.container {
+    width: 90%;
+    margin: 30px auto;
+    margin: 5%;
+}
+
+section.options div.container h2 {
+    font-size: 2rem;
+}
+
+section.options div.container h3 {
+    font-size: 1.6rem;
+}
+
+section.options div.container div {
+    margin-top: 40px;
+}
+
+section.options div.container div ul {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.options div.container div ul li {
+    margin: 3px 10px;
+    color: grey !important;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
