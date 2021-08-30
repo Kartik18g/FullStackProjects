@@ -9,3 +9,45 @@
 a {
     color: unset;
 }
+
+header {
+    background-image: url('../images/hero.png');
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+
+/* Header styles */
+
+
+/* Navbar styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 25px 0px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+nav .nav-item {
+    color: #fff;
+    margin: 0px 10px;
+}
+
+nav div.container {
+    display: flex;
+}
+
+nav div.nav-item.app {
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+nav div.nav-item {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
