@@ -748,5 +748,6 @@ footer{
     hr{
         width: 80%;
         border: 0.1px solid grey;
+        margin: 0px auto;
     }
 }
