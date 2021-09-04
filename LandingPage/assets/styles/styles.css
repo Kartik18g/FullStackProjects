@@ -4,6 +4,12 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Metropolis;
+    border: none;
+}
+
+*:focus {
+    outline: none;
+    border: none;
 }
 
 a {
@@ -50,4 +56,243 @@ nav div.nav-item.app {
 nav div.nav-item {
     font-size: 1.2rem;
     font-weight: 200;
+}
+
+header div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 80%;
+    margin: 0px auto;
+}
+
+header img.logo {
+    width: 300px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+/* header content */
+
+header div.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 70%;
+    border-radius: 10px;
+}
+
+div.search-box div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0px 5px;
+}
+
+header div.search-box i {
+    margin: 10px;
+}
+
+header div.search-box div.select i {
+    color: #F57082;
+}
+
+header div.search-box div.input i {
+    color: #828282b7;
+}
+
+header div.search-box div.seperator {
+    height: 50%;
+    background-color: #8282829b;
+    width: 2px;
+}
+
+header div.search-box div.input {
+    flex-grow: 80;
+}
+
+header div.search-box div.select select {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #757575;
+}
+
+header div.search-box div.input input {
+    width: 100%;
+    font-size: 1rem;
+    align-self: center;
+}
+
+
+/* header section complete--------------------- */
+
+
+/* Nearby places section */
+
+section.nearby {
+    min-height: 40vh;
+}
+
+section.nearby div.container {
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+section.nearby div.container h3 {
+    font-size: 2.2rem;
+    font-weight: unset;
+}
+
+section.nearby div.box {
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-top: 5%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+section.nearby div.box:hover {
+    box-shadow: rgba(80, 55, 55, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+
+/* Apps section */
+
+section.app {
+    min-height: 300px;
+    background-color: #FEFBF6;
+}
+
+section.app div.container {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.app div.container img {
+    max-width: 300px;
+    display: block;
+}
+
+section.app div.container div.form {
+    max-width: 485px;
+}
+
+section.app div.container div.form h1 {
+    font-size: 3rem;
+}
+
+section.app div.container div.form small {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #393737;
+    margin: 20px 0px;
+}
+
+
+/* Radio button styles*/
+
+
+/* tomorrow */
+
+
+/* ----------------- */
+
+section.app div.input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+section.app div.input input {
+    flex-grow: 70;
+    background-color: #fff;
+    border: 1px solid #CFCFCF;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border-radius: 5px;
+    height: 90%;
+    margin: 0px 10px 0px 0px;
+}
+
+section.app div.input button {
+    background-color: #ED5A6B;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+section.app div.form div.download {
+    margin: 20px 0px;
+    font-weight: 100;
+    color: grey;
+}
+
+section.app div.form div.download div {
+    margin: 5px;
+}
+
+section.app div.form div.download div img {
+    max-width: 150px;
+    display: inline-block;
+    margin: 5px 5px;
+}
+
+
+/* Section options */
+
+section.options {
+    min-height: 60vh;
+}
+
+section.options div.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+section.options div.container h2 {
+    font-size: 2rem;
+}
+
+section.options div.container h3 {
+    font-size: 1.6rem;
+}
+
+section.options div.container div {
+    margin-top: 40px;
+}
+
+section.options div.container div ul {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.options div.container div ul li {
+    margin: 3px 10px;
+    color: grey;
+    font-size: 1.1rem;
+    font-weight: 100;
 }

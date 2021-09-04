@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://ka-f.fontawesome.com/releases/v5.15.3/css/free-v4-shims.min.css?token=b862bb0d81" />
+    <link rel="stylesheet" href="https://ka-f.fontawesome.com/releases/v5.15.3/css/free.min.css?token=b862bb0d81" />
+    <link rel="stylesheet" href="https://ka-f.fontawesome.com/releases/v5.15.3/css/free-v4-font-face.min.css?token=b862bb0d81" />
+    <script defer src="./app.js"></script>
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <input id="calc_input" type="number" class="form__input" />
+        </div>
+        <div class="buttons">
+            <div id="add" style="background-color: #736ced" class="toggle">
+                <input type="checkbox" />
+                <span class="button"></span>
+                <span class="label"><i class="fas fa-plus"></i></span>
+            </div>
+            <div id="subtract" style="background-color: #736ced" class="toggle">
+                <input type="checkbox" checked />
+                <span class="button"></span>
+                <span class="label"><i class="fas fa-minus"></i></span>
+            </div>
+
+            <div id="multiply" style="background-color: #736ced" class="toggle">
+                <input type="checkbox" checked />
+                <span class="button"></span>
+                <span class="label"><i class="fas fa-times"></i></span>
+            </div>
+            <div id="divide" style="background-color: #736ced" class="toggle">
+                <input type="checkbox" checked />
+                <span class="button"></span>
+                <span class="label"><i class="fas fa-divide"></i></span>
+            </div>
+            <br />
+
+            <div id="equal" style="background-color: #a9fbd7" class="toggle">
+                <input type="checkbox" checked />
+                <span class="button"></span>
+                <span class="label"><i class="fas fa-equals"></i></span>
+            </div>
+            <div id="clear" style="background-color: #f45b69" class="toggle">
+                <input type="checkbox" checked />
+                <span class="button"></span>
+                <span class="label"><i class="far fa-trash-alt"></i></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
